@@ -381,14 +381,15 @@ char* cJSON_PrintUnformatted(cJSON* item){
 cJSON* parse_object(void){
     int name_len;
     char* name;
-    cJSON* object, *child;
+    cJSON *object, *child;
 
     object = cJSON_CreateObject();
     while(*input_buffer != '}'){
         input_buffer++; // "
         name_len = (int)(strstr(input_buffer, "\"") - input_buffer);
         name = (char*)malloc(name_len + 1);
-        strncpy(name, input_buffer, name_len);
+        memcpy(name, input_buffer, name_len);
+        name[name_len] = '\0';
         input_buffer += name_len+2; // <name>":
         child = parse();
         cJSON_AddItemToObject(object, name, child);
@@ -427,9 +428,12 @@ cJSON* parse_string(void){
 
     str_len = strstr(input_buffer, "\"") - input_buffer;
     str = (char*)malloc(str_len+1);
-    strncpy(str, input_buffer, str_len);
+    memcpy(str, input_buffer, str_len);
+    str[str_len] = '\0';
     input_buffer += str_len+1;
     string = cJSON_CreateString(str);
+    printf("%s : %d\n", str, str_len);
+    free(str);
 
     return string;
 }
