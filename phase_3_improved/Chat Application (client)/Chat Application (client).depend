@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1576229370 source:d:\desktop\ce\fop\project\chat application (client)\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1576229369 d:\desktop\ce\fop\project\chat application (client)\cjson.h
+	<stddef.h>
+
+1579945955 source:d:\desktop\ce\fop\project\chat application (client)\main.c
+	<stdio.h>
+	<stdbool.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	"cJSON.h"
+
+1576229370 source:d:\desktop\ce\projects\chat application(fop)\chat application (client)\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1576229369 d:\desktop\ce\projects\chat application(fop)\chat application (client)\cjson.h
+	<stddef.h>
+
+1580781628 source:d:\desktop\ce\projects\chat application(fop)\chat application (client)\main.c
+	<stdio.h>
+	<stdbool.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	"cJSON.h"
+

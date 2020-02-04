@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1580335637 source:d:\desktop\ce\projects\chat application(fop)\new folder\server\account.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<winsock2.h>
+	"cJSON.h"
+
+1576229369 d:\desktop\ce\projects\chat application(fop)\new folder\server\cjson.h
+	<stddef.h>
+
+1580044908 source:d:\desktop\ce\projects\chat application(fop)\new folder\server\channel.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	"cJSON.h"
+
+1576229370 source:d:\desktop\ce\projects\chat application(fop)\new folder\server\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1580797677 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\account.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<winsock2.h>
+	"my_cJSON.h"
+	"database.h"
+
+1576229369 d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\cjson.h
+	<stddef.h>
+
+1580797677 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\channel.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	"my_cJSON.h"
+	"database.h"
+
+1576229370 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1580797698 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\main.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	"my_cJSON.h"
+	"account.h"
+	"channel.h"
+	"database.h"
+
+1580743480 d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\account.h
+
+1580743439 d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\channel.h
+
+1580797677 d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\database.h
+
+1580797677 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\database.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	"my_cJSON.h"
+
+1580796559 source:d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\my_cjson.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"my_cJSON.h"
+
+1580794794 d:\desktop\ce\projects\chat application(fop)\chat application (server)\server\my_cjson.h
+	<stdbool.h>
+
