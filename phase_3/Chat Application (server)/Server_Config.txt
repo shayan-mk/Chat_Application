@@ -1,5 +1,1 @@
-{
-	"port":	12345,
-	"usersPath":	"../Resources/Users",
-	"channelsPath":	"../Resources/Channels"
-}
+{"usersPath":"../Resources/Users","channelsPath":"../Resources/Channels"}

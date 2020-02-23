@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include "cJSON.h"
+#include "my_cJSON.h"
 #include "database.h"
 
 #define MAX_LEN1 100

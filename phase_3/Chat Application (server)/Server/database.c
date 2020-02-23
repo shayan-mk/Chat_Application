@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <dirent.h>
-#include "cJSON.h"
+#include "my_cJSON.h"
 
 #define MAX_LEN1 100
 #define MAX_LEN2 1000
@@ -49,7 +49,7 @@ void make_dir(char* path){
     mkdir(path);
 }
 
-void init_database(const char* config_path, int* PORT_ptr){
+void init_database(const char* config_path){
 
     // process config data using cJSON
     cJSON* config_json = read_data(config_path);
@@ -57,7 +57,6 @@ void init_database(const char* config_path, int* PORT_ptr){
         printf("Server_Config.txt missing!\n");
         exit(0);
     }
-    *PORT_ptr = cJSON_GetObjectItem(config_json, "port")->valueint;
     strcpy(users_path, cJSON_GetObjectItem(config_json, "usersPath")->valuestring);
     strcpy(channels_path, cJSON_GetObjectItem(config_json, "channelsPath")->valuestring);
     cJSON_Delete(config_json);

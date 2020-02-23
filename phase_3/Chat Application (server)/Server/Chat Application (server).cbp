@@ -35,10 +35,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="account.h" />
-		<Unit filename="cJSON.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="cJSON.h" />
 		<Unit filename="channel.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -50,6 +46,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="my_cJSON.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="my_cJSON.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

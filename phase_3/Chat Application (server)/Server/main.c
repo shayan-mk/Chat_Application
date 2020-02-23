@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <winsock2.h>
-#include "cJSON.h"
+#include "my_cJSON.h"
 #include "account.h"
 #include "channel.h"
 #include "database.h"
@@ -11,11 +11,11 @@
 #define MAX_LEN1 100
 #define MAX_LEN2 1000
 #define MAX_CLIENTS 10
+#define PORT 12345
 
 int socket_create();
 void request_process();
 
-int PORT;
 char users_path[MAX_LEN1], channels_path[MAX_LEN1];
 cJSON* clients, *channels;
 
@@ -36,7 +36,7 @@ int main()
     }
 
     // initializing...
-    init_database("../Server_Config.txt", &PORT);
+    init_database("../Server_Config.txt");
     clients = cJSON_CreateObject();
     cJSON* server = cJSON_AddObjectToObject(clients, "server");
     cJSON_AddStringToObject(server, "username", "server");
